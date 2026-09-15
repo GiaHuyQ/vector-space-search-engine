@@ -1,0 +1,22 @@
+# virtual environment
+.venv/
+venv/
+
+# python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# env files
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# Data
+data/raw/*
+data/index/*
+!data/raw/.gitkeep
+!data/index/.gitkeep

@@ -1,0 +1,12 @@
+services:
+  api:
+    build:
+      context: .
+      target: dev
+    container_name: search_api_dev
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app   # mount code để hot reload
+    environment:
+      - ENV=development

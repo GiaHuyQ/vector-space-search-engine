@@ -1,0 +1,11 @@
+.git
+__pycache__/
+*.pyc
+venv/
+.env
+
+tests/
+
+data/*
+!data/raw/
+!data/index/

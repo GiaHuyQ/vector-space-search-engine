@@ -1,0 +1,10 @@
+services:
+  api:
+    build:
+      context: .
+      target: prod
+    container_name: search_api_prod
+    ports:
+      - "8000:8000"
+    environment:
+      - ENV=production

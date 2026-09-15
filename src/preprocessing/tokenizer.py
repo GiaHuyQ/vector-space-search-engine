@@ -1,6 +1,9 @@
 import re
 import string
 
+import nltk
+nltk.download("stopwords")
+
 from nltk.corpus import stopwords
 from nltk.stem import SnowballStemmer
 
@@ -20,6 +23,7 @@ EMOJI_PATTERN = re.compile(
 )
 
 def tokenize(text: str) -> list[str]:
+
     if not text:
         return []
     
