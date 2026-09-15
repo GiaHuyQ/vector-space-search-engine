@@ -1,7 +1,7 @@
 import structlog
 
 from fastapi import APIRouter, Request, Query, HTTPException
-from ..schemas.search import SearchResultItem, SearchResponse
+from src.api.schemas.search import SearchResultItem, SearchResponse
 
 from src.core.settings import settings
 
